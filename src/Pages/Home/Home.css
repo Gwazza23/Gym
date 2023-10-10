@@ -98,6 +98,44 @@
   color: var(--primary);
 }
 
+/*HOME SECTION TWO*/
+.home-section-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+
+}
+.home-section-two-map-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 400px;
+    overflow: hidden;
+    background: #f1f1f1;
+}
+.home-section-two-map {
+    border: none;
+    position: relative;
+    width:100%;
+    height: 400px;
+}
+.home-section-two-map-container h2 {
+    position: relative;
+    color: black;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 10px 0px;
+    padding: 5px;
+}
+.home-section-two-map-container p {
+    padding: 5px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
 @media only screen and (max-width: 1024px) {
   .home-section-one div {
     width: 225px;
@@ -127,6 +165,12 @@
   }
   .home-section-one div a {
     font-size: 0.7rem;
+  }
+  .home-section-two-map-container {
+    width: 90%;
+  }
+  .home-section-two-map {
+    width: 100%;
   }
 }
 
