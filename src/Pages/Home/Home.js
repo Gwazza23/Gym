@@ -1,5 +1,6 @@
 import Header from "./Components/Header";
 import SectionOne from "./Components/SectionOne";
+import SectionThree from "./Components/SectionThree";
 import SectionTwo from "./Components/SectionTwo";
 import "./Home.css";
 
@@ -9,6 +10,7 @@ function Home() {
       <Header />
       <SectionOne />
       <SectionTwo />
+      <SectionThree />
     </div>
   );
 }
