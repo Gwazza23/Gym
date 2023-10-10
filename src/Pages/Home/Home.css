@@ -181,6 +181,35 @@
   max-height: 60vh;
 }
 
+
+/*HOME DIVIDER*/
+.divider-container {
+    background: url(../../../public/media/divider.webp);
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+}
+.divider-container h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.1rem;
+}
+.divider-container a {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+    background-color: var(--background);
+    padding: 10px;
+    margin-left: 20px;
+    transition: color 0.5s ease;
+}
+.divider-container a:hover {
+    color: var(--primary);
+}
+
 @media only screen and (max-width: 1024px) {
   .home-section-one div {
     width: 225px;
@@ -231,6 +260,13 @@
     width: 100%;
     height: 50%;
   }
+
+  .divider-container h2 {
+    font-size: 1.4rem;
+  }
+  .divider-container a {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -257,4 +293,12 @@
     margin: 10px 0px;
     left: 0px;
   }
+
+  .home-section-three .area-one {
+    padding: 10px 20px;
+  }
+  .home-section-three .area-one p {
+    font-size: 0.8rem;
+  }
+
 }
