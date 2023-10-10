@@ -56,12 +56,77 @@
   color: var(--primary);
 }
 
+/*HOME SECTION ONE*/
+.home-section-one {
+  display: flex;
+  justify-content: space-around;
+}
+.home-section-one div {
+  position: relative;
+  top: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  background: #f1f1f1;
+  width: 325px;
+  padding: 15px 10px;
+  text-align: center;
+  box-shadow: 0px 0px 20px 0.5px;
+}
+.home-section-one div h2 {
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 1.8rem;
+}
+.home-section-one div p {
+  margin: 10px 0px 25px 0px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.home-section-one div a {
+  width: fit-content;
+  text-decoration: none;
+  color: white;
+  background: var(--background);
+  padding: 8px;
+  transition: color 0.5s ease;
+}
+.home-section-one div a:hover {
+  color: var(--primary);
+}
 
+@media only screen and (max-width: 1024px) {
+  .home-section-one div {
+    width: 225px;
+  }
+  .home-section-one div p {
+    font-size: 0.9rem;
+  }
+  .home-section-one div a {
+    font-size: 0.9rem;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .landing-container {
     background-image: url(../../../public/media/landing-vertical.webp);
     background-position: right;
+  }
+
+  .home-section-one div {
+    width: 30%;
+  }
+  .home-section-one div h2 {
+    font-size: 1.2rem;
+  }
+  .home-section-one div p {
+    font-size:  0.7rem;
+  }
+  .home-section-one div a {
+    font-size: 0.7rem;
   }
 }
 
@@ -79,5 +144,14 @@
   }
   .landing-container-contract-header h2 {
     font-size: 1.2rem;
+  }
+  .home-section-one {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-section-one div {
+    width: 80%;
+    margin: 10px 0px;
+    left: 0px;
   }
 }
