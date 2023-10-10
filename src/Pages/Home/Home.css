@@ -181,33 +181,100 @@
   max-height: 60vh;
 }
 
+/*HOME SECTION FOUR*/
+
+.home-section-four {
+  height: fit-content;
+  padding: 10px 30px;
+  background-color: #f1f1f1;
+}
+
+.home-section-four h2 {
+  margin-top: 60px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.1rem;
+  margin-bottom: 30px;
+}
+.home-section-four-equipment-list {
+  display: grid;
+  height: 80vh;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.home-section-four-equipment-list .eq1 {
+  grid-area: 3 / 5 / 5 / 7;
+}
+.home-section-four-equipment-list .eq2 {
+  grid-area: 1 / 5 / 3 / 7;
+}
+.home-section-four-equipment-list .eq3 {
+  grid-area: 3 / 1 / 5 / 3;
+}
+.home-section-four-equipment-list .eq4 {
+  grid-area: 1 / 1 / 3 / 5;
+}
+.home-section-four-equipment-list .eq5 {
+  grid-area: 3 / 3 / 5 / 5;
+}
+
+.home-section-four .equipment {
+  position: relative;
+  cursor: default;
+}
+.home-section-four .equipment img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.4);
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+.home-section-four .equipment p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  z-index: 2;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.home-section-four .equipment:hover img {
+  filter: brightness(0.75);
+}
 
 /*HOME DIVIDER*/
 .divider-container {
-    background: url(../../../public/media/divider.webp);
-    background-size: 90% 100%;
-    background-repeat: no-repeat;
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    padding: 0px 50px;
+  background: url(../../../public/media/divider.webp);
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
+  position: relative;
+  bottom: -50px;
 }
 .divider-container h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.1rem;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.1rem;
 }
 .divider-container a {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: white;
-    background-color: var(--background);
-    padding: 10px;
-    margin-left: 20px;
-    transition: color 0.5s ease;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+  background-color: var(--background);
+  padding: 10px;
+  margin-left: 20px;
+  transition: color 0.5s ease;
 }
 .divider-container a:hover {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -267,6 +334,10 @@
   .divider-container a {
     font-size: 1rem;
   }
+
+  .home-section-four .equipment p {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 425px) {
@@ -301,4 +372,23 @@
     font-size: 0.8rem;
   }
 
+  .home-section-four-equipment-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .home-section-four-equipment-list .eq1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .home-section-four-equipment-list .eq2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .home-section-four-equipment-list .eq3 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .home-section-four-equipment-list .eq4 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .home-section-four-equipment-list .eq5 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
 }

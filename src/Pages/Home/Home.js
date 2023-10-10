@@ -1,5 +1,6 @@
 import Divider from "./Components/Divider";
 import Header from "./Components/Header";
+import SectionFour from "./Components/SectionFour";
 import SectionOne from "./Components/SectionOne";
 import SectionThree from "./Components/SectionThree";
 import SectionTwo from "./Components/SectionTwo";
@@ -13,6 +14,7 @@ function Home() {
       <SectionTwo />
       <SectionThree />
       <Divider />
+      <SectionFour />
     </div>
   );
 }
