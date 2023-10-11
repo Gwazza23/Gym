@@ -185,7 +185,7 @@
 
 .home-section-four {
   height: fit-content;
-  padding: 10px 30px;
+  padding: 10px 50px;
   background-color: #f1f1f1;
 }
 
@@ -245,6 +245,85 @@
 
 .home-section-four .equipment:hover img {
   filter: brightness(0.75);
+}
+
+/*HOME SECTION FIVE*/
+.home-section-five {
+  padding: 10px 50px;
+}
+.home-section-five h2 {
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.1rem;
+  margin: 50px 0px;
+}
+.trainers-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.trainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f1f1f1;
+  width: calc(30% - 20px);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  transition: all 0.8s ease;
+}
+.trainer img {
+  padding: 10px 10px 0px 10px;
+  width: 75%;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.4s ease;
+}
+.splat-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 15%;
+}
+.trainer:nth-child(2) .splat-container img {
+  rotate: 45deg;
+}
+.trainer:nth-child(3) .splat-container img {
+  rotate: 90deg;
+}
+.splat-container img {
+  opacity: 0;
+  width: 70%;
+  height: 70%;
+  transition: all 0.8s ease;
+}
+.trainer-info {
+  color: white;
+  background-color: var(--background);
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+  z-index: 3;
+}
+.trainer-info h3,
+.trainer-info h4 {
+  margin: 15px 0px;
+}
+.trainer-socials {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 30px;
+}
+.trainer:hover {
+  box-shadow: 0px 0px 16px 1px;
+}
+.trainer:hover img {
+  scale: 1.3;
+}
+.trainer:hover .splat-container img {
+  opacity: 1;
 }
 
 /*HOME DIVIDER*/
@@ -335,8 +414,23 @@
     font-size: 1rem;
   }
 
+  .home-section-four {
+    padding: 10px 10px;
+  }
+
   .home-section-four .equipment p {
     font-size: 1rem;
+  }
+
+  .home-section-five {
+    padding: 10px 10px;
+  }
+  .trainers-section {
+    justify-content: flex-start;
+  }
+  .trainer {
+    width: calc(50% - 20px);
+    margin: 10px 10px;
   }
 }
 
@@ -372,6 +466,10 @@
     font-size: 0.8rem;
   }
 
+  .home-section-four h2 {
+    text-align: center;
+  }
+
   .home-section-four-equipment-list {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -390,5 +488,20 @@
   }
   .home-section-four-equipment-list .eq5 {
     grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .home-section-five h2 {
+    text-align: center;
+  }
+
+  .trainers-section {
+    justify-content: center;
+  }
+  .trainer {
+    width: 80%;
+    margin: 20px 0px;
+  }
+  .trainer img {
+    width: 60%;
   }
 }
